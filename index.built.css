@@ -114,6 +114,7 @@ input {
   width: 100%;
   padding: 8px 10px;
   text-align: center;
+  border-radius: 5px;
 }
 input:active, input:focus {
   outline: none;
