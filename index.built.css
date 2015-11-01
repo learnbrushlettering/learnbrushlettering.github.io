@@ -74,12 +74,6 @@ form {
   text-align: center;
 }
 
-@media (max-width: 320px) {
-  form {
-    padding: 25px;
-  }
-}
-
 a, a:visited, a:active, a:hover {
   color: currentColor;
   text-decoration: underline;
@@ -143,6 +137,16 @@ button {
 button:active, button:focus, button:hover {
   border: ;
   background-color: #9cf;
+}
+
+@media (max-width: 320px) {
+  form {
+    padding: 25px;
+  }
+  p.cta {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @-webkit-keyframes fade {
