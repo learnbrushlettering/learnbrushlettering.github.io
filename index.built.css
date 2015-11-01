@@ -1,0 +1,146 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+h1, p {
+  margin: 0;
+}
+
+h1 + p, p + p {
+  margin-top: 20px;
+}
+
+body {
+  font-family: "Avenir Next", Avenir, sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  background-color: #fff5ff;
+}
+
+.background-images {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  -webkit-animation: fade 30s infinite;
+          animation: fade 30s infinite;
+}
+
+.background-image:nth-child(1) { -webkit-animation-delay: 0; animation-delay: 0; }
+.background-image:nth-child(2) { -webkit-animation-delay: 10s; animation-delay: 10s; }
+.background-image:nth-child(3) { -webkit-animation-delay: 15s; animation-delay: 15s; }
+
+.content {
+  z-index: 1;
+}
+
+form {
+  background-color: white;
+  max-width: 30em;
+  padding: 40px;
+  margin: 40px;
+  color: #999;
+  text-align: center;
+}
+
+a, a:visited, a:active, a:hover {
+  color: currentColor;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+hr {
+  background-color: none;
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  box-shadow: none;
+  font-size: 1em;
+  font-family: inherit;
+  color: currentColor;
+  border: 2px solid #999;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: center;
+}
+input:active, input:focus {
+  outline: none;
+  border-color: #9cf;
+}
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #999;
+  color: white;
+  box-shadow: none;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 15px;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+button:active, button:focus, button:hover {
+  border: ;
+  background-color: #9cf;
+}
+
+@-webkit-keyframes fade {
+  from { opacity: 0; }
+  33%  { opacity: 1; }
+  66%  { opacity: 0; }
+  to   { opacity: 0; }
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  33%  { opacity: 1; }
+  66%  { opacity: 0; }
+  to   { opacity: 0; }
+}
