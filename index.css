@@ -64,6 +64,12 @@ form {
   text-align: center;
 }
 
+@media (max-width: 320px) {
+  form {
+    padding: 20px;
+  }
+}
+
 a, a:visited, a:active, a:hover {
   color: currentColor;
   text-decoration: underline;
