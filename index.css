@@ -151,12 +151,15 @@ button:active, button:focus, button:hover {
   background-color: #9cf;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   form {
     padding: 25px;
   }
   p.description, p.cta {
     width: auto;
+  }
+  p.follow {
+    font-size: 90%;
   }
 }
 
